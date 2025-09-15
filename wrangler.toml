@@ -1,11 +1,9 @@
-#:schema node_modules/wrangler/config-schema.json
-name = "xget"
+name = "xget-docker-proxy"
+compatibility_date = "2025-09-15"
 main = "src/index.js"
-compatibility_date = "2024-10-22"
 compatibility_flags = ["nodejs_compat"]
-workers_dev = false
-[observability]
-enabled = true
-head_sampling_rate = 1
-[placement]
-mode = "smart"
+
+# Optional: Define routes for custom domain
+[[routes]]
+pattern = "docker-mirror.myhjwlzf.top*"
+zone_name = "myhjwlzf.top"
