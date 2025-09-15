@@ -5,5 +5,5 @@ compatibility_flags = ["nodejs_compat"]
 
 # Optional: Define routes for custom domain
 [[routes]]
-pattern = "docker-mirror.myhjwlzf.top*"
+pattern = "docker-mirror.myhjwlzf.top/*"
 zone_name = "myhjwlzf.top"
